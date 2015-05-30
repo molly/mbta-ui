@@ -23,7 +23,7 @@
       }).y_axis + 2;
       width = $("body").width();
       height = $("body").height();
-      svgContainer = d3.select(".map").append("svg").attr("viewBox", "0 0 " + max_x + " " + max_y).attr("preserveAspectRatio", "maxXmaxY").attr("width", width).attr("height", height);
+      svgContainer = d3.select(".map").append("svg").attr("viewBox", "0 0 " + max_x + " " + max_y).attr("width", width).attr("height", height);
       stations = svgContainer.selectAll(".station").data(stations).enter().append("circle");
       return stationAttributes = stations.attr("cx", function(d) {
         return d.x_axis + 1;

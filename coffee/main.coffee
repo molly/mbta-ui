@@ -17,7 +17,6 @@
 
       svgContainer = d3.select(".map").append("svg")
         .attr("viewBox", "0 0 #{max_x} #{max_y}")
-        .attr("preserveAspectRatio", "maxXmaxY")
         .attr("width", width)
         .attr("height", height)
 
