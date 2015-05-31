@@ -9,34 +9,34 @@
   },
   "station-porter": {
     "spider-x": 1536,
-    "spider-y": 651
+    "spider-y": 649
   },
   "station-harvard": {
     "spider-x": 1697,
     "spider-y": 810
   },
   "station-central": {
-    "spider-x": 1857,
-    "spider-y": 972
+    "spider-x": 1858,
+    "spider-y": 971
   },
    "station-kendallmit": {
     "spider-x": 2020,
     "spider-y": 1133
   },
   "station-charlesmgh": {
-    "spider-x": 2213,
+    "spider-x": 2214,
     "spider-y": 1327
   },
   "station-parkst": {
-    "spider-x": 2341,
-    "spider-y": 1456
+    "spider-x": 2342,
+    "spider-y": 1455
   },
   "station-downtowncrossing": {
-    "spider-x": 2531,
+    "spider-x": 2533,
     "spider-y": 1646
   },
   "station-southstation": {
-    "spider-x": 2719,
+    "spider-x": 2722,
     "spider-y": 1835
   },
   "station-broadway": {
@@ -100,8 +100,8 @@
     "spider-y": 3125
   },
   "station-wollaston": {
-    "spider-x": 3275,
-    "spider-y": 3252
+    "spider-x": 3276,
+    "spider-y": 3251
   },
   "station-quincycenter": {
     "spider-x": 3402,
