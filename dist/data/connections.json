@@ -138,5 +138,100 @@
     "source": "station-quincyadams",
     "target": "station-braintree",
     "line": "red"
+  },
+  {
+    "source": "station-oakgrove",
+    "target": "station-maldencenter",
+    "line": "orange"
+  },
+  {
+    "source": "station-maldencenter",
+    "target": "station-wellington",
+    "line": "orange"
+  },
+  {
+    "source": "station-wellington",
+    "target": "station-assembly",
+    "line": "orange"
+  },
+  {
+    "source": "station-assembly",
+    "target": "station-sullivansq",
+    "line": "orange"
+  },
+  {
+    "source": "station-sullivansq",
+    "target": "station-communitycollege",
+    "line": "orange"
+  },
+  {
+    "source": "station-communitycollege",
+    "target": "station-northstation",
+    "line": "orange"
+  },
+  {
+    "source": "station-northstation",
+    "target": "station-haymarket",
+    "line": "orange"
+  },
+  {
+    "source": "station-haymarket",
+    "target": "station-state",
+    "line": "orange"
+  },
+  {
+    "source": "station-state",
+    "target": "station-downtowncrossing",
+    "line": "orange"
+  },
+  {
+    "source": "station-downtowncrossing",
+    "target": "station-chinatown",
+    "line": "orange"
+  },
+  {
+    "source": "station-chinatown",
+    "target": "station-tuftsmedicalcenter",
+    "line": "orange"
+  },
+  {
+    "source": "station-tuftsmedicalcenter",
+    "target": "station-backbay",
+    "line": "orange"
+  },
+  {
+    "source": "station-backbay",
+    "target": "station-massave",
+    "line": "orange"
+  },
+  {
+    "source": "station-massave",
+    "target": "station-ruggles",
+    "line": "orange"
+  },
+  {
+    "source": "station-ruggles",
+    "target": "station-roxburycrossing",
+    "line": "orange"
+  },
+  {
+    "source": "station-roxburycrossing",
+    "target": "station-jacksonsq",
+    "line": "orange"
+  },
+  {
+    "source": "station-jacksonsq",
+    "target": "station-stonybrook",
+    "line": "orange"
+  },
+  {
+    "source": "station-stonybrook",
+    "target": "station-greenst",
+    "line": "orange"
+  },
+  {
+    "source": "station-greenst",
+    "target": "station-foresthills",
+    "line": "orange"
   }
 ]

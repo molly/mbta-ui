@@ -114,5 +114,81 @@
   "station-braintree": {
     "spider-x": 3492,
     "spider-y": 3701
+  },
+  "station-oakgrove": {
+    "spider-x": 2625,
+    "spider-y": 23
+  },
+  "station-maldencenter": {
+    "spider-x": 2625,
+    "spider-y": 148
+  },
+  "station-wellington": {
+    "spider-x": 2625,
+    "spider-y": 273
+  },
+  "station-assembly": {
+    "spider-x": 2625,
+    "spider-y": 398
+  },
+  "station-sullivansq": {
+    "spider-x": 2625,
+    "spider-y": 522
+  },
+  "station-communitycollege": {
+    "spider-x": 2625,
+    "spider-y": 645
+  },
+  "station-northstation": {
+    "spider-x": 2625,
+    "spider-y": 944
+  },
+  "station-haymarket": {
+    "spider-x": 2625,
+    "spider-y": 1172
+  },
+  "station-state": {
+    "spider-x": 2625,
+    "spider-y": 1433
+  },
+  "station-chinatown": {
+    "spider-x": 2343,
+    "spider-y": 1836
+  },
+  "station-tuftsmedicalcenter": {
+    "spider-x": 2131,
+    "spider-y": 2048
+  },
+  "station-backbay": {
+    "spider-x": 2010,
+    "spider-y": 2169
+  },
+  "station-massave": {
+    "spider-x": 1901,
+    "spider-y": 2278
+  },
+  "station-ruggles": {
+    "spider-x": 1785,
+    "spider-y": 2394
+  },
+  "station-roxburycrossing": {
+    "spider-x": 1670,
+    "spider-y": 2509
+  },
+  "station-jacksonsq": {
+    "spider-x": 1524,
+    "spider-y": 2655
+  },
+  "station-stonybrook": {
+    "spider-x": 1379,
+    "spider-y": 2800
+  },
+  "station-greenst": {
+    "spider-x": 1233,
+    "spider-y": 2946
+  },
+  "station-foresthills": {
+    "spider-x": 1087,
+    "spider-y": 3092
   }
 }
