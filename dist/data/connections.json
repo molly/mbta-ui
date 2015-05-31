@@ -1,0 +1,142 @@
+[
+  {
+    "source": "station-alewife",
+    "target": "station-davis",
+    "line": "red"
+  },
+  {
+    "source": "station-davis",
+    "target": "station-porter",
+    "line": "red"
+  },
+  {
+    "source": "station-porter",
+    "target": "station-harvard",
+    "line": "red"
+  },
+  {
+    "source": "station-harvard",
+    "target": "station-central",
+    "line": "red"
+  },
+  {
+    "source": "station-central",
+    "target": "station-kendallmit",
+    "line": "red"
+  },
+  {
+    "source": "station-kendallmit",
+    "target": "station-charlesmgh",
+    "line": "red"
+  },
+  {
+    "source": "station-charlesmgh",
+    "target": "station-parkst",
+    "line": "red"
+  },
+  {
+    "source": "station-parkst",
+    "target": "station-downtowncrossing",
+    "line": "red"
+  },
+  {
+    "source": "station-downtowncrossing",
+    "target": "station-southstation",
+    "line": "red"
+  },
+  {
+    "source": "station-southstation",
+    "target": "station-broadway",
+    "line": "red"
+  },
+  {
+    "source": "station-broadway",
+    "target": "station-andrew",
+    "line": "red"
+  },
+  {
+    "source": "station-andrew",
+    "target": "station-jfkumass",
+    "line": "red"
+  },
+  {
+    "source": "station-jfkumass",
+    "target": "station-savinhill",
+    "line": "red"
+  },
+  {
+    "source": "station-savinhill",
+    "target": "station-fieldscorner",
+    "line": "red"
+  },
+  {
+    "source": "station-fieldscorner",
+    "target": "station-shawmut",
+    "line": "red"
+  },
+  {
+    "source": "station-shawmut",
+    "target": "station-ashmont",
+    "line": "red"
+  },
+  {
+    "source": "station-ashmont",
+    "target": "station-cedargrove",
+    "line": "red-mattapan"
+  },
+  {
+    "source": "station-cedargrove",
+    "target": "station-butler",
+    "line": "red-mattapan"
+  },
+  {
+    "source": "station-butler",
+    "target": "station-milton",
+    "line": "red-mattapan"
+  },
+  {
+    "source": "station-milton",
+    "target": "station-centralave",
+    "line": "red-mattapan"
+  },
+  {
+    "source": "station-centralave",
+    "target": "station-valleyrd",
+    "line": "red-mattapan"
+  },
+  {
+    "source": "station-valleyrd",
+    "target": "station-capenst",
+    "line": "red-mattapan"
+  },
+  {
+    "source": "station-capenst",
+    "target": "station-mattapan",
+    "line": "red-mattapan"
+  },
+  {
+    "source": "station-jfkumass",
+    "target": "station-northquincy",
+    "line": "red"
+  },
+  {
+    "source": "station-northquincy",
+    "target": "station-wollaston",
+    "line": "red"
+  },
+  {
+    "source": "station-wollaston",
+    "target": "station-quincycenter",
+    "line": "red"
+  },
+  {
+    "source": "station-quincycenter",
+    "target": "station-quincyadams",
+    "line": "red"
+  },
+  {
+    "source": "station-quincyadams",
+    "target": "station-braintree",
+    "line": "red"
+  }
+]

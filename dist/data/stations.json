@@ -1,0 +1,118 @@
+{
+  "station-alewife": {
+    "spider-x": 1213,
+    "spider-y": 326
+  },
+  "station-davis": {
+    "spider-x": 1374,
+    "spider-y": 487
+  },
+  "station-porter": {
+    "spider-x": 1536,
+    "spider-y": 651
+  },
+  "station-harvard": {
+    "spider-x": 1697,
+    "spider-y": 810
+  },
+  "station-central": {
+    "spider-x": 1857,
+    "spider-y": 972
+  },
+   "station-kendallmit": {
+    "spider-x": 2020,
+    "spider-y": 1133
+  },
+  "station-charlesmgh": {
+    "spider-x": 2213,
+    "spider-y": 1327
+  },
+  "station-parkst": {
+    "spider-x": 2341,
+    "spider-y": 1456
+  },
+  "station-downtowncrossing": {
+    "spider-x": 2531,
+    "spider-y": 1646
+  },
+  "station-southstation": {
+    "spider-x": 2719,
+    "spider-y": 1835
+  },
+  "station-broadway": {
+    "spider-x": 2847,
+    "spider-y": 2215
+  },
+  "station-andrew": {
+    "spider-x": 2847,
+    "spider-y": 2405
+  },
+  "station-jfkumass": {
+    "spider-x": 2847,
+    "spider-y": 2592
+  },
+  "station-savinhill": {
+    "spider-x": 2672,
+    "spider-y": 3034
+  },
+  "station-fieldscorner": {
+    "spider-x": 2668,
+    "spider-y": 3124
+  },
+  "station-shawmut": {
+    "spider-x": 2668,
+    "spider-y": 3210
+  },
+  "station-ashmont": {
+    "spider-x": 2668,
+    "spider-y": 3297
+  },
+  "station-cedargrove": {
+    "spider-x": 2668,
+    "spider-y": 3439
+  },
+  "station-butler": {
+    "spider-x": 2625,
+    "spider-y": 3530
+  },
+  "station-milton": {
+    "spider-x": 2527,
+    "spider-y": 3530
+  },
+  "station-centralave": {
+    "spider-x": 2429,
+    "spider-y": 3530
+  },
+  "station-valleyrd": {
+    "spider-x": 2329,
+    "spider-y": 3530
+  },
+  "station-capenst": {
+    "spider-x": 2232,
+    "spider-y": 3530
+  },
+  "station-mattapan": {
+    "spider-x": 2133,
+    "spider-y": 3530
+  },
+  "station-northquincy": {
+    "spider-x": 3150,
+    "spider-y": 3125
+  },
+  "station-wollaston": {
+    "spider-x": 3275,
+    "spider-y": 3252
+  },
+  "station-quincycenter": {
+    "spider-x": 3402,
+    "spider-y": 3377
+  },
+  "station-quincyadams": {
+    "spider-x": 3492,
+    "spider-y": 3508
+  },
+  "station-braintree": {
+    "spider-x": 3492,
+    "spider-y": 3701
+  }
+}
