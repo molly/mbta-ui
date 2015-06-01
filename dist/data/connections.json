@@ -515,5 +515,113 @@
     "target": "station-clevelandcircle",
     "line": "green",
     "branch": ["c"]
+  },
+  {
+    "source": "station-kenmore",
+    "target": "station-blandfordst",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-blandfordst",
+    "target": "station-bueast",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-bueast",
+    "target": "station-bucentral",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-bucentral",
+    "target": "station-buwest",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-buwest",
+    "target": "station-stpaulst-b",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-stpaulst-b",
+    "target": "station-pleasantst",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-pleasantst",
+    "target": "station-babcockst",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-babcockst",
+    "target": "station-packardscorner",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-packardscorner",
+    "target": "station-harvardave",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-harvardave",
+    "target": "station-griggsst",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-griggsst",
+    "target": "station-allstonst",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-allstonst",
+    "target": "station-warrenst",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-warrenst",
+    "target": "station-washingtonst",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-washingtonst",
+    "target": "station-sutherlandrd",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-sutherlandrd",
+    "target": "station-chiswickrd",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-chiswickrd",
+    "target": "station-chestnuthillave",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-chestnuthillave",
+    "target": "station-southst",
+    "line": "green",
+    "branch": ["b"]
+  },
+  {
+    "source": "station-southst",
+    "target": "station-bostoncollege",
+    "line": "green",
+    "branch": ["b"]
   }
 ]

@@ -370,5 +370,78 @@
   "station-clevelandcircle": {
     "spider-x": 113,
     "spider-y": 2069
+  },
+  "station-blandfordst": {
+    "spider-x": 1245,
+    "spider-y": 1594
+  },
+  "station-bueast": {
+    "spider-x": 1184,
+    "spider-y": 1533
+  },
+  "station-bucentral": {
+    "spider-x": 1116,
+    "spider-y": 1465 
+  },
+  "station-buwest": {
+    "spider-x": 1056,
+    "spider-y": 1405
+  },
+  "station-stpaulst-b": {
+    "spider-x": 987,
+    "spider-y": 1336
+  },
+  "station-pleasantst": {
+    "spider-x": 926,
+    "spider-y": 1275
+  },
+  "station-babcockst": {
+    "spider-x": 856,
+    "spider-y": 1205
+  },
+  "station-packardscorner": {
+    "spider-x": 789,
+    "spider-y": 1138
+  },
+  "station-harvardave": {
+    "spider-x": 690,
+    "spider-y": 1099
+  },
+  "station-griggsst": {
+    "spider-x": 591,
+    "spider-y": 1138
+  },
+  "station-allstonst": {
+    "spider-x": 524,
+    "spider-y": 1202
+  },
+  "station-warrenst": {
+    "spider-x": 460,
+    "spider-y": 1268
+  },
+  "station-washingtonst": {
+    "spider-x": 394,
+    "spider-y": 1334
+  },
+  "station-sutherlandrd": {
+    "spider-x": 328,
+    "spider-y": 1400
+  },
+  "station-chiswickrd": {
+    "spider-x": 262,
+    "spider-y": 1466
+  },
+  "station-chestnuthillave": {
+    "spider-x": 196,
+    "spider-y": 1532
+  },
+  "station-southst": {
+    "spider-x": 133,
+    "spider-y": 1595
+
+  },
+  "station-bostoncollege": {
+    "spider-x": 22,
+    "spider-y": 1654
   }
 }
