@@ -233,5 +233,119 @@
     "source": "station-greenst",
     "target": "station-foresthills",
     "line": "orange"
+  },
+  {
+    "source": "station-lechmere",
+    "target": "station-scienceparkwestend",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-scienceparkwestend",
+    "target": "station-northstation",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-northstation",
+    "target": "station-haymarket",
+    "line": "green",
+    "branch": ["c", "e"]
+  },
+  {
+    "source": "station-haymarket",
+    "target": "station-govtctr",
+    "line": "green",
+    "branch": ["c", "e"]
+  },
+  {
+    "source": "station-govtctr",
+    "target": "station-parkst",
+    "line": "green",
+    "branch": ["c", "e"]
+  },
+  {
+    "source": "station-parkst",
+    "target": "station-boylston",
+    "line": "green",
+    "branch": ["b", "c", "d", "e"]
+  },
+  {
+    "source": "station-boylston",
+    "target": "station-arlington",
+    "line": "green",
+    "branch": ["b", "c", "d", "e"]
+  },
+  {
+    "source": "station-arlington",
+    "target": "station-copley",
+    "line": "green",
+    "branch": ["b", "c", "d", "e"]
+  },
+  {
+    "source": "station-copley",
+    "target": "station-prudential",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-prudential",
+    "target": "station-symphony",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-symphony",
+    "target": "station-northeastern",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-northeastern",
+    "target": "station-museumoffinearts",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-museumoffinearts",
+    "target": "station-longwoodmedicalarea",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-longwoodmedicalarea",
+    "target": "station-brighamcircle",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-brighamcircle",
+    "target": "station-fenwoodrd",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-fenwoodrd",
+    "target": "station-missionpark",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-missionpark",
+    "target": "station-riverway",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-riverway",
+    "target": "station-backofthehill",
+    "line": "green",
+    "branch": ["e"]
+  },
+  {
+    "source": "station-backofthehill",
+    "target": "station-heath",
+    "line": "green",
+    "branch": ["e"]
   }
 ]

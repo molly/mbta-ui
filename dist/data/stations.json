@@ -36,8 +36,8 @@
     "spider-y": 1646
   },
   "station-southstation": {
-    "spider-x": 2722,
-    "spider-y": 1835
+    "spider-x": 2723,
+    "spider-y": 1836
   },
   "station-broadway": {
     "spider-x": 2847,
@@ -190,5 +190,73 @@
   "station-foresthills": {
     "spider-x": 1087,
     "spider-y": 3092
+  },
+  "station-lechmere": {
+    "spider-x": 2466,
+    "spider-y": 785
+  },
+  "station-scienceparkwestend": {
+    "spider-x": 2550,
+    "spider-y": 871
+  },
+  "station-govtctr": {
+    "spider-x": 2483,
+    "spider-y": 1314
+  },
+  "station-boylston": {
+    "spider-x": 2133,
+    "spider-y": 1646
+  },
+  "station-arlington": {
+    "spider-x": 1941,
+    "spider-y": 1646
+  },
+  "station-copley": {
+    "spider-x": 1749,
+    "spider-y": 1646
+  },
+  "station-prudential": {
+    "spider-x": 1628,
+    "spider-y": 1773
+  },
+  "station-symphony": {
+    "spider-x": 1620,
+    "spider-y": 1997
+  },
+  "station-northeastern": {
+    "spider-x": 1573,
+    "spider-y": 2062
+  },
+  "station-museumoffinearts": {
+    "spider-x": 1514,
+    "spider-y": 2121
+  },
+  "station-longwoodmedicalarea": {
+    "spider-x": 1455,
+    "spider-y": 2180
+  },
+  "station-brighamcircle": {
+    "spider-x": 1396,
+    "spider-y": 2239
+  },
+  "station-fenwoodrd": {
+    "spider-x": 1337,
+    "spider-y": 2298
+  },
+  "station-missionpark": {
+    "spider-x": 1278,
+    "spider-y": 2357
+  },
+  "station-riverway": {
+    "spider-x": 1219,
+    "spider-y": 2416
+  },
+  "station-backofthehill": {
+    "spider-x": 1160,
+    "spider-y": 2475
+  },
+  "station-heath": {
+    "spider-x": 1101,
+    "spider-y": 2534
   }
 }
