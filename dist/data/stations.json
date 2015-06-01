@@ -443,5 +443,45 @@
   "station-bostoncollege": {
     "spider-x": 22,
     "spider-y": 1654
+  },
+  "station-wonderland": {
+    "spider-x": 3882,
+    "spider-y": 198
+  },
+  "station-reverebeach": {
+    "spider-x": 3738,
+    "spider-y": 342
+  },
+  "station-beachmont": {
+    "spider-x": 3620,
+    "spider-y": 461
+  },
+  "station-suffolkdowns": {
+    "spider-x": 3497,
+    "spider-y": 584
+  },
+  "station-orientheights": {
+    "spider-x": 3376,
+    "spider-y": 705
+  },
+  "station-woodisland": {
+    "spider-x": 3258,
+    "spider-y": 825
+  },
+  "station-airport": {
+    "spider-x": 3160,
+    "spider-y": 923
+  },
+  "station-maverick": {
+    "spider-x": 3063,
+    "spider-y": 1020
+  },
+  "station-aquarium": {
+    "spider-x": 2800,
+    "spider-y": 1283
+  },
+  "station-bowdoin": {
+    "spider-x": 2352,
+    "spider-y": 1181
   }
 }

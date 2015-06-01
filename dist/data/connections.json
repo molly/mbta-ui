@@ -82,37 +82,44 @@
   {
     "source": "station-ashmont",
     "target": "station-cedargrove",
-    "line": "red-mattapan"
+    "line": "red",
+    "branch": "mattapan"
   },
   {
     "source": "station-cedargrove",
     "target": "station-butler",
-    "line": "red-mattapan"
+    "line": "red",
+    "branch": "mattapan"
   },
   {
     "source": "station-butler",
     "target": "station-milton",
-    "line": "red-mattapan"
+    "line": "red",
+    "branch": "mattapan"
   },
   {
     "source": "station-milton",
     "target": "station-centralave",
-    "line": "red-mattapan"
+    "line": "red",
+    "branch": "mattapan"
   },
   {
     "source": "station-centralave",
     "target": "station-valleyrd",
-    "line": "red-mattapan"
+    "line": "red",
+    "branch": "mattapan"
   },
   {
     "source": "station-valleyrd",
     "target": "station-capenst",
-    "line": "red-mattapan"
+    "line": "red",
+    "branch": "mattapan"
   },
   {
     "source": "station-capenst",
     "target": "station-mattapan",
-    "line": "red-mattapan"
+    "line": "red",
+    "branch": "mattapan"
   },
   {
     "source": "station-jfkumass",
@@ -623,5 +630,60 @@
     "target": "station-bostoncollege",
     "line": "green",
     "branch": ["b"]
+  },
+  {
+    "source": "station-wonderland",
+    "target": "station-reverebeach",
+    "line": "blue"
+  },
+  {
+    "source": "station-reverebeach",
+    "target": "station-beachmont",
+    "line": "blue"
+  },
+  {
+    "source": "station-beachmont",
+    "target": "station-suffolkdowns",
+    "line": "blue"
+  },
+  {
+    "source": "station-suffolkdowns",
+    "target": "station-orientheights",
+    "line": "blue"
+  },
+  {
+    "source": "station-orientheights",
+    "target": "station-woodisland",
+    "line": "blue"
+  },
+  {
+    "source": "station-woodisland",
+    "target": "station-airport",
+    "line": "blue"
+  },
+  {
+    "source": "station-airport",
+    "target": "station-maverick",
+    "line": "blue"
+  },
+  {
+    "source": "station-maverick",
+    "target": "station-aquarium",
+    "line": "blue"
+  },
+  {
+    "source": "station-aquarium",
+    "target": "station-state",
+    "line": "blue"
+  },
+  {
+    "source": "station-state",
+    "target": "station-govtctr",
+    "line": "blue"
+  },
+  {
+    "source": "station-govtctr",
+    "target": "station-bowdoin",
+    "line": "blue"
   }
 ]
