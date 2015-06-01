@@ -347,5 +347,95 @@
     "target": "station-heath",
     "line": "green",
     "branch": ["e"]
+  },
+  {
+    "source": "station-copley",
+    "target": "station-hynesconventionctr",
+    "line": "green",
+    "branch": ["b", "c", "d"]
+  },
+  {
+    "source": "station-hynesconventionctr",
+    "target": "station-kenmore",
+    "line": "green",
+    "branch": ["b", "c", "d"]
+  },
+  {
+    "source": "station-kenmore",
+    "target": "station-fenway",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-fenway",
+    "target": "station-longwood",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-longwood",
+    "target": "station-brooklinevillage",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-brooklinevillage",
+    "target": "station-brooklinehills",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-brooklinehills",
+    "target": "station-beaconsfield",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-beaconsfield",
+    "target": "station-reservoir",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-reservoir",
+    "target": "station-chestnuthill",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-chestnuthill",
+    "target": "station-newtoncentre",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-newtoncentre",
+    "target": "station-newtonhighlands",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-newtonhighlands",
+    "target": "station-eliot",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-eliot",
+    "target": "station-waban",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-waban",
+    "target": "station-woodland",
+    "line": "green",
+    "branch": ["d"]
+  },
+  {
+    "source": "station-woodland",
+    "target": "station-riverside",
+    "line": "green",
+    "branch": ["d"]
   }
 ]

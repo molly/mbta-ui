@@ -209,11 +209,11 @@
   },
   "station-arlington": {
     "spider-x": 1941,
-    "spider-y": 1646
+    "spider-y": 1651
   },
   "station-copley": {
     "spider-x": 1749,
-    "spider-y": 1646
+    "spider-y": 1651
   },
   "station-prudential": {
     "spider-x": 1628,
@@ -258,5 +258,65 @@
   "station-heath": {
     "spider-x": 1101,
     "spider-y": 2534
+  },
+  "station-hynesconventionctr": {
+    "spider-x": 1557,
+    "spider-y": 1651
+  },
+  "station-kenmore": {
+    "spider-x": 1365,
+    "spider-y": 1651
+  },
+  "station-fenway": {
+    "spider-x": 1186,
+    "spider-y": 1747
+  },
+  "station-longwood": {
+    "spider-x": 1116,
+    "spider-y": 1817
+  },
+  "station-brooklinevillage": {
+    "spider-x": 1046,
+    "spider-y": 1887
+  },
+  "station-brooklinehills": {
+    "spider-x": 976,
+    "spider-y": 1957
+  },
+  "station-beaconsfield": {
+    "spider-x": 906,
+    "spider-y": 2025
+  },
+  "station-reservoir": {
+    "spider-x": 836,
+    "spider-y": 2096
+  },
+  "station-chestnuthill": {
+    "spider-x": 767,
+    "spider-y": 2166
+  },
+  "station-newtoncentre": {
+    "spider-x": 700,
+    "spider-y": 2232
+  },
+  "station-newtonhighlands": {
+    "spider-x": 630,
+    "spider-y": 2302
+  },
+  "station-eliot": {
+    "spider-x": 560,
+    "spider-y": 2372
+  },
+  "station-waban": {
+    "spider-x": 490,
+    "spider-y": 2442
+  },
+  "station-woodland": {
+    "spider-x": 420,
+    "spider-y": 2512
+  },
+  "station-riverside": {
+    "spider-x": 310,
+    "spider-y": 2568
   }
 }
