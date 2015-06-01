@@ -437,5 +437,83 @@
     "target": "station-riverside",
     "line": "green",
     "branch": ["d"]
+  },
+  {
+    "source": "station-kenmore",
+    "target": "station-stmarysst",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-stmarysst",
+    "target": "station-hawesst",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-hawesst",
+    "target": "station-kentst",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-kentst",
+    "target": "station-stpaulst-c",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-stpaulst-c",
+    "target": "station-coolidgecorner",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-coolidgecorner",
+    "target": "station-summitave",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-summitave",
+    "target": "station-brandonhall",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-brandonhall",
+    "target": "station-fairbanksst",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-fairbanksst",
+    "target": "station-washingtonsq",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-washingtonsq",
+    "target": "station-tappanst",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-tappanst",
+    "target": "station-deanrd",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-deanrd",
+    "target": "station-englewoodave",
+    "line": "green",
+    "branch": ["c"]
+  },
+  {
+    "source": "station-englewoodave",
+    "target": "station-clevelandcircle",
+    "line": "green",
+    "branch": ["c"]
   }
 ]

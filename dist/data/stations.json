@@ -318,5 +318,57 @@
   "station-riverside": {
     "spider-x": 310,
     "spider-y": 2568
+  },
+  "station-stmarysst": {
+    "spider-x": 1116,
+    "spider-y": 1610
+  },
+  "station-hawesst": {
+    "spider-x": 1054,
+    "spider-y": 1548
+  },
+  "station-kentst": {
+    "spider-x": 986,
+    "spider-y": 1480
+  },
+  "station-stpaulst-c": {
+    "spider-x": 765,
+    "spider-y": 1467
+  },
+  "station-coolidgecorner": {
+    "spider-x": 693,
+    "spider-y": 1539
+  },
+  "station-summitave": {
+    "spider-x": 638,
+    "spider-y": 1594
+  },
+  "station-brandonhall": {
+    "spider-x": 569,
+    "spider-y": 1663
+  },
+  "station-fairbanksst": {
+    "spider-x": 500,
+    "spider-y": 1732
+  },
+  "station-washingtonsq": {
+    "spider-x": 431,
+    "spider-y": 1801
+  },
+  "station-tappanst": {
+    "spider-x": 362,
+    "spider-y": 1870
+  },
+  "station-deanrd": {
+    "spider-x": 293,
+    "spider-y": 1939
+  },
+  "station-englewoodave": {
+    "spider-x": 224,
+    "spider-y": 2008
+  },
+  "station-clevelandcircle": {
+    "spider-x": 113,
+    "spider-y": 2069
   }
 }
