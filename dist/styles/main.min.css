@@ -1,1 +1,1 @@
-.map,body,html{height:100%;width:100%}
+.map,.map svg,.sidebar{height:100%}.container-fluid,.row,body,html{height:100%;width:100%;background:#eee}.map{overflow:hidden;background:#fff}.map svg{position:absolute;width:100%}

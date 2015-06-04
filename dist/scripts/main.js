@@ -39,9 +39,9 @@ padding = 100;
     max_y = _.max(stations, function(s) {
       return s.y;
     }).y + padding;
-    width = $("body").width();
+    width = $(".map").width();
     height = $("body").height();
-    svg = d3.select(".map").append("svg").attr("viewBox", "0 0 " + max_x + " " + max_y).attr("width", width).attr("height", height);
+    svg = d3.select(".map").append("svg").attr("viewBox", "0 0 " + max_x + " " + max_y);
     network = [];
     _.each(network_data, function(conn) {
       return network.push({
