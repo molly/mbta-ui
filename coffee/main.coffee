@@ -19,6 +19,7 @@ padding = 100
     stations = []
     _.each keys, (k) =>
       stations.push
+        class_name: k
         x: station_data[k]["spider-x"]
         y: station_data[k]["spider-y"]
 
@@ -46,10 +47,10 @@ padding = 100
       .enter()
       .append('line')
       .attr
-        x1: (c) -> c.x1
-        y1: (c) -> c.y1
-        x2: (c) -> c.x2
-        y2: (c) -> c.y2
+        "x1": (c) -> c.x1
+        "y1": (c) -> c.y1
+        "x2": (c) -> c.x2
+        "y2": (c) -> c.y2
       .style
         'stroke-width': 20
         'stroke': (c) -> c.color
@@ -59,9 +60,10 @@ padding = 100
       .enter()
       .append("circle")
       .attr
-        cx: (d) -> d.x
-        cy: (d) -> d.y)
-        r: 20
+        "cx": (d) -> d.x
+        "cy": (d) -> d.y
+        "r": 20,
+        "class": (d) -> d.class_name
       .style
         "fill": "#fff",
         "stroke-width": 5,

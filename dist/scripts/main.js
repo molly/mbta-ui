@@ -27,6 +27,7 @@ padding = 100;
     _.each(keys, (function(_this) {
       return function(k) {
         return stations.push({
+          class_name: k,
           x: station_data[k]["spider-x"],
           y: station_data[k]["spider-y"]
         });
@@ -51,22 +52,41 @@ padding = 100;
         color: color_data[conn["line"]]
       });
     });
-    svg.selectAll(".connection").data(network).enter().append('line').attr('x1', function(c) {
-      return c.x1;
-    }).attr('y1', function(c) {
-      return c.y1;
-    }).attr('x2', function(c) {
-      return c.x2;
-    }).attr('y2', function(c) {
-      return c.y2;
-    }).attr('stroke-width', 20).attr('stroke', function(c) {
-      return c.color;
+    svg.selectAll(".connection").data(network).enter().append('line').attr({
+      "x1": function(c) {
+        return c.x1;
+      },
+      "y1": function(c) {
+        return c.y1;
+      },
+      "x2": function(c) {
+        return c.x2;
+      },
+      "y2": function(c) {
+        return c.y2;
+      }
+    }).style({
+      'stroke-width': 20,
+      'stroke': function(c) {
+        return c.color;
+      }
     });
-    return svg.selectAll(".station").data(stations).enter().append("circle").attr("cx", function(d) {
-      return d.x;
-    }).attr("cy", function(d) {
-      return d.y;
-    }).attr("r", 20).style("fill", "#fff").style('stroke-width', 5).style('stroke', "#999");
+    return svg.selectAll(".station").data(stations).enter().append("circle").attr({
+      "cx": function(d) {
+        return d.x;
+      },
+      "cy": function(d) {
+        return d.y;
+      },
+      "r": 20,
+      "class": function(d) {
+        return d.class_name;
+      }
+    }).style({
+      "fill": "#fff",
+      "stroke-width": 5,
+      "stroke": "#999"
+    });
   };
   return queue().defer(d3.json, "dist/data/stations.json").defer(d3.json, "dist/data/connections.json").defer(d3.json, "dist/data/colors.json").await(plot);
 })(jQuery, d3, _);
