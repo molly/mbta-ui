@@ -45,21 +45,27 @@ padding = 100
       .data(network)
       .enter()
       .append('line')
-      .attr('x1', (c) -> c.x1)
-      .attr('y1', (c) -> c.y1)
-      .attr('x2', (c) -> c.x2)
-      .attr('y2', (c) -> c.y2)
-      .attr('stroke-width', 60)
-      .attr('stroke', (c) -> c.color)
+      .attr
+        x1: (c) -> c.x1
+        y1: (c) -> c.y1
+        x2: (c) -> c.x2
+        y2: (c) -> c.y2
+      .style
+        'stroke-width': 20
+        'stroke': (c) -> c.color
 
     svg.selectAll(".station")
       .data(stations)
       .enter()
       .append("circle")
-      .attr("cx", (d) -> d.x)
-      .attr("cy", (d) -> d.y)
-      .attr("r", 20)
-      .style("fill", "#fff")
+      .attr
+        cx: (d) -> d.x
+        cy: (d) -> d.y)
+        r: 20
+      .style
+        "fill": "#fff",
+        "stroke-width": 5,
+        "stroke": "#999"
 
   queue()
     .defer(d3.json, "dist/data/stations.json")
