@@ -3,68 +3,95 @@ var gulp = require('gulp'),
 sass = require('gulp-ruby-sass'),
 autoprefixer = require('gulp-autoprefixer'),
 minifycss = require('gulp-minify-css'),
-uglify = require('gulp-uglify'),
-rename = require('gulp-rename'),
-concat = require('gulp-concat'),
-notify = require('gulp-notify'),
-cache = require('gulp-cache'),
 livereload = require('gulp-livereload'),
-del = require('del'),
 connect = require('gulp-connect'),
-coffee = require('gulp-coffee');
+rename = require('gulp-rename'),
+react = require('gulp-react'),
+htmlreplace = require('gulp-html-replace'),
+source = require('vinyl-source-stream'),
+browserify = require('browserify'),
+watchify = require('watchify'),
+reactify = require('reactify'),
+streamify = require('gulp-streamify');
 
-// Styles
+var path = {
+  HTML: 'src/html/index.html',
+  JS: ['src/js/*.js', 'src/js/**/*.js'],
+  SASS: 'src/sass/main.sass',
+  MINIFIED_OUT_JS: 'build.min.js',
+  MINIFIED_OUT_CSS: 'build.min.css',
+  OUT: 'build.js',
+  DEST_SRC_JS: 'dist/src/js',
+  DEST_SRC_CSS: 'dist/src/css',
+  DEST_BUILD: 'dist/build',
+  DEST: 'dist',
+  ENTRY_POINT: './src/js/App.js'
+}
+
 gulp.task('styles', function() {
-  return sass('styles/main.sass', { style: 'expanded' })
+  return sass(path.SASS, { style: 'expanded' })
   .pipe(autoprefixer('last 2 version'))
-  .pipe(gulp.dest('dist/styles'))
-  .pipe(rename({ suffix: '.min' }))
+  .pipe(gulp.dest(path.DEST_SRC_CSS))
+  .pipe(rename(path.MINIFIED_OUT_CSS))
   .pipe(minifycss())
-  .pipe(gulp.dest('dist/styles'))
-  .pipe(notify({ message: 'Styles task complete' }));
+  .pipe(gulp.dest(path.DEST_BUILD));
 });
 
-gulp.task('coffee', function() {
-  return gulp.src('coffee/*.coffee')
-    .pipe(coffee({bare: true}).on('error', function (err) { console.log(err); }))
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('dist/scripts'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
-    .pipe(gulp.dest('dist/scripts'))
-    .pipe(notify({ message: 'Coffee task complete' }));
-});
-
-// Clean
-gulp.task('clean', function(cb) {
-  del(['dist/assets/css', 'dist/assets/js', 'dist/assets/img'], cb)
-});
-
-// Watch
 gulp.task('watch', function() {
- 
-  // Watch .scss files
-  gulp.watch('styles/**/*.sass', ['styles']);
-  
-  // Watch .js files
-  gulp.watch('coffee/**/*.coffee', ['coffee']);
+  gulp.watch(path.SASS, ['styles']);
+  gulp.watch(path.HTML, ['replaceHTMLdev']);
 
-  // Create LiveReload server
-  livereload.listen();
-  
-  // Watch any files in dist/, reload on change
-  gulp.watch(['dist/**']).on('change', livereload.changed);
-  
+  var watcher = watchify(browserify({
+    entries: [path.ENTRY_POINT],
+    transform: [reactify],
+    debug: true,
+    cache: {}, packageCache: {}, fullPaths: true
+  }));
+
+  return watcher.on('update', function() {
+    watcher.bundle()
+      .pipe(source(path.OUT))
+      .pipe(gulp.dest(path.DEST_SRC_JS));
+  })
+    .bundle()
+    .pipe(source(path.OUT))
+    .pipe(gulp.dest(path.DEST_SRC_JS));
 });
 
-// Webserver
+gulp.task('build', function() {
+  browserify({
+    entries: [path.ENTRY_POINT],
+    transform: [reactify],
+  })
+    .bundle()
+    .pipe(source(path.MINIFIED_OUT_JS))
+    .pipe(gulp.dest(path.DEST_BUILD));
+});
+
+gulp.task('replaceHTMLprod', function(){
+  gulp.src(path.HTML)
+    .pipe(htmlreplace({
+      'js': path.MINIFIED_OUT_JS,
+      'css': path.MINIFIED_OUT_CSS}))
+    .pipe(gulp.dest(path.DEST_BUILD));
+});
+
+gulp.task('replaceHTMLdev', function(){
+  gulp.src(path.HTML)
+    .pipe(htmlreplace({'js': 'src/js/' + path.OUT,
+      'css': 'src/css/main.css'}))
+    .pipe(gulp.dest(path.DEST));
+});
+
 gulp.task('webserver', function() {
   connect.server({
-    livereload: true
+    livereload: true,
+    port: 8085
   });
 });
 
-// Default task
-gulp.task('default', ['clean'], function() {
+gulp.task('default', function() {
   gulp.start('watch', 'webserver');
 });
+
+gulp.task('production', ['replaceHTMLprod', 'build'])
