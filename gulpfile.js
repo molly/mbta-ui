@@ -11,12 +11,12 @@ htmlreplace = require('gulp-html-replace'),
 source = require('vinyl-source-stream'),
 browserify = require('browserify'),
 watchify = require('watchify'),
-reactify = require('reactify'),
+reactify = require('coffee-reactify'),
 streamify = require('gulp-streamify');
 
 var path = {
   HTML: 'src/html/index.html',
-  JS: ['src/js/*.js', 'src/js/**/*.js'],
+  JS: ['src/js/*.cjsx', 'src/js/**/*.cjsx'],
   SASS: 'src/sass/main.sass',
   MINIFIED_OUT_JS: 'build.min.js',
   MINIFIED_OUT_CSS: 'build.min.css',
@@ -25,7 +25,7 @@ var path = {
   DEST_SRC_CSS: 'dist/src/css',
   DEST_BUILD: 'dist/build',
   DEST: 'dist',
-  ENTRY_POINT: './src/js/App.js'
+  ENTRY_POINT: './src/js/app.cjsx'
 }
 
 gulp.task('styles', function() {
