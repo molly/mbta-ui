@@ -1,17 +1,39 @@
-html, body, .container-fluid, .row
-  height: 100%
+$red: #e12726
+$orange: #f18b21
+$green: #008345
+$blue: #007cc3
+
+html,
+body,
+div#app
   width: 100%
-  background: #eee
-
-.map
   height: 100%
-  overflow: hidden
-  background: #fff
 
-  svg
-    position: absolute
-    height: 100%
-    width: 100%
-
-.sidebar
+section.fill-height
   height: 100%
+  display: flex
+  flex-direction: column
+
+.line.full-row
+  // width: 100%
+  display: flex
+  flex: 1
+  align-items: center
+
+  .content
+    justify-content: space-around
+
+    *
+      display: flex
+
+.red-bg
+  background-color: $red
+
+.orange-bg
+  background-color: $orange
+
+.green-bg
+  background-color: $green
+
+.blue-bg
+  background-color: $blue
