@@ -4,7 +4,7 @@ Line = React.createClass
   render: ->
     <div className="line full-row #{@props.line}-bg">
       <header>{@capitalize(@props.line) + " line"}</header>
-      <div className="alert-count"><div>1</div></div>
+      <div className="alert-count">1</div>
     </div>
 
   capitalize: (word) ->
