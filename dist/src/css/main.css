@@ -3,6 +3,7 @@ body,
 div#app {
   width: 100%;
   height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 section.fill-height {
@@ -31,31 +32,58 @@ section.fill-height {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.line.full-row .content {
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-.line.full-row .content * {
+.line.full-row * {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
+.line.full-row header {
+  font-size: 150%;
+  color: #fff;
+}
+.line.full-row .alert-count {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  padding: 5px;
+  background: #fff;
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .red-bg {
   background-color: #e12726;
+  color: #e12726;
 }
 
 .orange-bg {
   background-color: #f18b21;
+  color: #f18b21;
 }
 
 .green-bg {
   background-color: #008345;
+  color: #008345;
 }
 
 .blue-bg {
   background-color: #007cc3;
+  color: #007cc3;
 }

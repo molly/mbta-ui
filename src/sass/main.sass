@@ -8,6 +8,7 @@ body,
 div#app
   width: 100%
   height: 100%
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
 
 section.fill-height
   height: 100%
@@ -19,21 +20,41 @@ section.fill-height
   display: flex
   flex: 1
   align-items: center
+  justify-content: space-between
+  padding: 0 10%
+  font-weight: bold
+  text-transform: uppercase
 
-  .content
-    justify-content: space-around
+  *
+    display: flex
 
-    *
-      display: flex
+  header
+    font-size: 150%
+    color: #fff
+
+  .alert-count
+    border-radius: 50%
+    width: 16px
+    height: 16px
+    line-height: 16px
+    padding: 5px
+    background: #fff
+    text-align: center
+    justify-content: center
+    align-items: center
 
 .red-bg
   background-color: $red
+  color: $red
 
 .orange-bg
   background-color: $orange
+  color: $orange
 
 .green-bg
   background-color: $green
+  color: $green
 
 .blue-bg
   background-color: $blue
+  color: $blue
