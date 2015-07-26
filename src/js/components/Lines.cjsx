@@ -14,10 +14,16 @@ Lines = React.createClass
 
   render: ->
     <section className="fill-height">
-      <Line line="red" />
-      <Line line="orange" />
-      <Line line="green" />
-      <Line line="blue" />
+      {@renderLine("red")}
+      {@renderLine("orange")}
+      {@renderLine("green")}
+      {@renderLine("blue")}
     </section>
+
+  renderLine: (color) ->
+    if @state.lines.fetched
+      <Line line={color} data={@state.lines.data[color]} fetched={true} />
+    else
+      <Line line={color} fetched={false} />
 
 module.exports = Lines
