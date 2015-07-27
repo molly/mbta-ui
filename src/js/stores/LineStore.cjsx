@@ -1,7 +1,7 @@
 Flux = require('flux')
 GeneralStore = require('general-store')
 $ = require('jquery')
-Actions = require('../actions/Actions.coffee')
+ActionTypes = require('../actions/ActionTypes.coffee')
 
 dispatcher = new Flux.Dispatcher();
 baseUrl = "https://mbta-twitter.herokuapp.com"
@@ -9,6 +9,7 @@ lines = {
   fetched: false
   fetching: false
   data: null
+  expanded: null
 }
 
 fetch = () ->
@@ -17,7 +18,7 @@ fetch = () ->
   $.get("#{baseUrl}/all/hours/1/line")
     .done (data) ->
       dispatcher.dispatch
-        actionType: Actions.LINE_FETCH_SUCCEEDED
+        actionType: ActionTypes.LINE_FETCH_SUCCEEDED
         data: data
 
 LineStore = GeneralStore.define()
@@ -27,14 +28,24 @@ LineStore = GeneralStore.define()
     return lines
   )
   .defineResponseTo(
-    Actions.LINE_FETCH_SUCCEEDED
+    ActionTypes.LINE_FETCH_SUCCEEDED
     (data) ->
       return lines = {
         fetched: true
         fetching: false
         data: data
+        expanded: null
       }
+  )
+  .defineResponseTo(
+    ActionTypes.LINE_EXPANDED
+    (color) ->
+      lines.expanded = color
+      return lines
   )
   .register(dispatcher)
 
-module.exports = LineStore
+module.exports = {
+  LineStore: LineStore
+  dispatcher: dispatcher
+}
