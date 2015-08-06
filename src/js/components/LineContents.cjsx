@@ -7,7 +7,7 @@ LineContents = React.createClass
     expanded: React.PropTypes.string
 
   render: ->
-    <div className="full-row #{@props.line} contents">
+    <div className="full-row #{@props.line} contents" key={@props.line}>
       <li>
       {_.map @props.data, (details) ->
           <ul className="tweet" key={details.tweet.idStr}>{details.tweet.text}</ul>

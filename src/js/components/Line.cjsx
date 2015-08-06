@@ -12,7 +12,7 @@ Line = React.createClass
     isExpanded: false
 
   render: ->
-    <div className="line full-row #{@props.line} header" onClick={@expand}>
+    <div className="line full-row #{@props.line} header" onClick={@toggle}>
       <header>{@capitalize(@props.line) + " line"}</header>
       {@renderAlerts()}
     </div>
@@ -21,9 +21,9 @@ Line = React.createClass
     if @props.fetched
       <div className="alert-count">{@props.data.length}</div>
 
-  expand: ->
+  toggle: ->
     dispatcher.dispatch
-      actionType: ActionTypes.LINE_EXPANDED
+      actionType: ActionTypes.LINE_TOGGLED
       data: @props.line
 
   capitalize: (word) ->

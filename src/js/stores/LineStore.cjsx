@@ -38,9 +38,9 @@ LineStore = GeneralStore.define()
       }
   )
   .defineResponseTo(
-    ActionTypes.LINE_EXPANDED
+    ActionTypes.LINE_TOGGLED
     (color) ->
-      lines.expanded = color
+      lines.expanded = if lines.expanded is color then null else color
       return lines
   )
   .register(dispatcher)
