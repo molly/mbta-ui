@@ -1,6 +1,7 @@
+$ = require('jquery')
+_ = require('underscore')
 Flux = require('flux')
 GeneralStore = require('general-store')
-$ = require('jquery')
 ActionTypes = require('../actions/ActionTypes.coffee')
 
 dispatcher = new Flux.Dispatcher();
@@ -17,6 +18,10 @@ fetch = () ->
   lines.fetching = true
   $.get("#{baseUrl}/all/hours/1/line")
     .done (data) ->
+      # Filter out retweets. If I never end up wanting them, I'll just stop storing
+      # them in the DB, but for now I'm just doing this client-side.
+      _.each _.keys(data), (line) ->
+        data[line] = _.filter(data[line], (details) -> return !details.retweet)
       dispatcher.dispatch
         actionType: ActionTypes.LINE_FETCH_SUCCEEDED
         data: data
@@ -30,6 +35,7 @@ LineStore = GeneralStore.define()
   .defineResponseTo(
     ActionTypes.LINE_FETCH_SUCCEEDED
     (data) ->
+      console.log data
       return lines = {
         fetched: true
         fetching: false
