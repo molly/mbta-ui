@@ -36,12 +36,12 @@ section.fill-height {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 10%;
 }
 
 .line {
   font-weight: bold;
   text-transform: uppercase;
+  padding: 0 10%;
 }
 .line * {
   display: -webkit-box;
@@ -76,17 +76,50 @@ section.fill-height {
   -webkit-flex-grow: 4;
       -ms-flex-positive: 4;
           flex-grow: 4;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   overflow: auto;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  padding: 0 5%;
 }
-.contents li {
-  list-style: none;
+.contents * {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
-.contents li ul {
-  padding: 0;
+.contents .tweet-container {
+  max-width: 500px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contents .tweet-container .tweet-profile-picture {
+  min-width: 50px;
+}
+.contents .tweet-container .tweet-profile-picture img {
+  width: 48px;
+  height: 48px;
+}
+.contents .tweet-container .tweet-body {
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.contents .tweet-container .tweet-body .tweet-header a {
+  color: inherit;
+  text-decoration: none;
+}
+.contents .tweet-container .tweet-body .tweet-header .name {
+  font-weight: bold;
+}
+.contents .tweet-container .tweet-body .tweet-header .screenname {
+  font-size: 80%;
 }
 
 .red.header {

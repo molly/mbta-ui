@@ -1,19 +1,17 @@
 _ = require('underscore')
+Tweet = require('./Tweet.cjsx')
 
 LineContents = React.createClass
   propTypes:
     line: React.PropTypes.string.isRequired
-    data: React.PropTypes.array
-    expanded: React.PropTypes.string
+    data: React.PropTypes.array.isRequired
 
   render: ->
     details = 
     <div className="full-row #{@props.line} contents" key={@props.line}>
-      <li>
       {_.map @props.data, (details) ->
-          <ul className="tweet" key={details.tweet.idStr}>{details.tweet.text}</ul>
+        <Tweet key={details.tweet.idStr} details={details} />
       }
-      </li>
     </div>
 
 module.exports = LineContents

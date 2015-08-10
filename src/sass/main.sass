@@ -20,11 +20,11 @@ section.fill-height
   flex: 1
   align-items: center
   justify-content: space-between
-  padding: 0 10%
 
 .line
   font-weight: bold
   text-transform: uppercase
+  padding: 0 10%
 
   *
     display: flex
@@ -46,14 +46,39 @@ section.fill-height
 
 .contents
   flex-grow: 4
+  flex-flow: column
+  justify-content: flex-start
   overflow: auto
-  align-items: flex-start
+  padding: 0 5%
 
-  li
-    list-style: none
+  *
+    display: flex
 
-    ul
-      padding: 0
+  .tweet-container
+    max-width: 500px
+    justify-content: space-between
+
+    .tweet-profile-picture
+      min-width: 50px
+
+      img
+        width: 48px
+        height: 48px
+
+    .tweet-body
+      flex-flow: column
+
+      .tweet-header
+        a
+          color: inherit
+          text-decoration: none
+
+        .name
+          font-weight: bold
+
+        .screenname
+          font-size: 80%
+
       
 .red
   &.header
