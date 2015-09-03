@@ -5,7 +5,7 @@ GeneralStore = require('general-store')
 ActionTypes = require('../actions/ActionTypes.coffee')
 
 dispatcher = new Flux.Dispatcher();
-baseUrl = "https://mbta-twitter.herokuapp.com"
+baseUrl = "https://mbta-twitter.herokuapp.com/api"
 lines = {
   fetched: false
   fetching: false
