@@ -16,7 +16,7 @@ lines = {
 fetch = () ->
   lines.fetched = false
   lines.fetching = true
-  $.get("#{baseUrl}/all/hours/1/line")
+  $.get("#{baseUrl}/all/hours/2/line")
     .done (data) ->
       # Filter out retweets. If I never end up wanting them, I'll just stop storing
       # them in the DB, but for now I'm just doing this client-side.
@@ -35,7 +35,6 @@ LineStore = GeneralStore.define()
   .defineResponseTo(
     ActionTypes.LINE_FETCH_SUCCEEDED
     (data) ->
-      console.log data
       return lines = {
         fetched: true
         fetching: false

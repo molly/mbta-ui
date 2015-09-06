@@ -97,6 +97,9 @@ section.fill-height {
   display: flex;
 }
 .contents .tweet-container {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
