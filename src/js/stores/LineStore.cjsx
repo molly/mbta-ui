@@ -21,7 +21,7 @@ fetch = () ->
       # Filter out retweets. If I never end up wanting them, I'll just stop storing
       # them in the DB, but for now I'm just doing this client-side.
       _.each _.keys(data), (line) ->
-        data[line] = _.filter(data[line], (details) -> return !details.retweet)
+        data[line] = (_.filter(data[line], (details) -> return !details.retweet)).reverse()
       dispatcher.dispatch
         actionType: ActionTypes.LINE_FETCH_SUCCEEDED
         data: data
