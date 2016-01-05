@@ -5,7 +5,7 @@ GeneralStore = require('general-store')
 ActionTypes = require('../actions/ActionTypes.coffee')
 
 dispatcher = new Flux.Dispatcher();
-baseUrl = "https://mbta-twitter.herokuapp.com"
+baseUrl = "https://mbta-twitter.herokuapp.com/api"
 lines = {
   fetched: false
   fetching: false
@@ -16,12 +16,12 @@ lines = {
 fetch = () ->
   lines.fetched = false
   lines.fetching = true
-  $.get("#{baseUrl}/all/hours/1/line")
+  $.get("#{baseUrl}/all/hours/2/line")
     .done (data) ->
       # Filter out retweets. If I never end up wanting them, I'll just stop storing
       # them in the DB, but for now I'm just doing this client-side.
       _.each _.keys(data), (line) ->
-        data[line] = _.filter(data[line], (details) -> return !details.retweet)
+        data[line] = (_.filter(data[line], (details) -> return !details.retweet)).reverse()
       dispatcher.dispatch
         actionType: ActionTypes.LINE_FETCH_SUCCEEDED
         data: data
@@ -35,7 +35,6 @@ LineStore = GeneralStore.define()
   .defineResponseTo(
     ActionTypes.LINE_FETCH_SUCCEEDED
     (data) ->
-      console.log data
       return lines = {
         fetched: true
         fetching: false

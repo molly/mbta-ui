@@ -41,7 +41,7 @@ section.fill-height {
 .line {
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0 10%;
+  padding: 0 20px;
 }
 .line * {
   display: -webkit-box;
@@ -79,12 +79,16 @@ section.fill-height {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   overflow: auto;
-  padding: 0 5%;
+  padding: 10px 0;
 }
 .contents * {
   display: -webkit-box;
@@ -93,14 +97,25 @@ section.fill-height {
   display: flex;
 }
 .contents .tweet-container {
-  max-width: 500px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+.contents .tweet-container p {
+  margin: 5px 0;
 }
 .contents .tweet-container .tweet-profile-picture {
   min-width: 50px;
+  padding-right: 10px;
 }
 .contents .tweet-container .tweet-profile-picture img {
   width: 48px;
@@ -110,16 +125,35 @@ section.fill-height {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
+  padding-right: 10px;
+  width: 100%;
 }
 .contents .tweet-container .tweet-body .tweet-header a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   color: inherit;
   text-decoration: none;
 }
 .contents .tweet-container .tweet-body .tweet-header .name {
   font-weight: bold;
+  padding-right: 10px;
 }
 .contents .tweet-container .tweet-body .tweet-header .screenname {
   font-size: 80%;
+}
+.contents .tweet-container .tweet-body .tweet-header .screenname:before {
+  content: "@";
+}
+.contents .tweet-container .timestamp a {
+  font-size: 80%;
+  color: #333;
+  text-decoration: none;
 }
 
 .red.header {
@@ -143,7 +177,7 @@ section.fill-height {
   color: #008345;
 }
 .green.contents {
-  background-color: #009d52;
+  background-color: #009c52;
 }
 
 .blue.header {
